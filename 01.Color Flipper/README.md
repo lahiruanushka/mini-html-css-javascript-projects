@@ -10,4 +10,4 @@ Color Flipper is a simple web application that allows users to change the backgr
 
 ## Screenshot
 
-![Color Flipper Screenshot](./screenshot.png)
+![Color Flipper Screenshot](./Screenshot.png)
