@@ -17,4 +17,5 @@ A simple web application that checks whether a given word or phrase is a palindr
 
 ## Screenshots
 
-![Palindrome Checker Screenshot](screenshot.png)
+![Palindrome Checker Screenshot](screenshot1.png)
+![Palindrome Checker Screenshot](screenshot2.png)
