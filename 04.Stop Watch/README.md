@@ -15,3 +15,7 @@ A simple stopwatch application that allows you to start, stop, and reset the tim
 3. Click the "Stop" button to pause the stopwatch.
 4. Click the "Reset" button to reset the stopwatch to `00:00`.
 
+## Screenshots
+
+![Stop Watch Screenshot](screenshot.png)
+
