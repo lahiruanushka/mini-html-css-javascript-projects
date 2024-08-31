@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #007bff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styles */
+button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#start-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#stop-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#reset-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    #time {
+        font-size: 2.5rem;
+    }
+    
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
