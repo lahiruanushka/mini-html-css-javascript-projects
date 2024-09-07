@@ -8,6 +8,7 @@ const synonymsEl = document.getElementById("synonyms");
 const antonymsEl = document.getElementById("antonyms");
 const audioEl = document.getElementById("audio");
 const sourceLinkEl = document.getElementById("source-link");
+const errorEl = document.getElementById("error-text");
 
 async function fetchAPI(word) {
   try {
@@ -18,14 +19,15 @@ async function fetchAPI(word) {
     infoTextEl.style.display = "none";
 
     if (result.title) {
-      meaningContainerEl.style.display = "block";
-      wordEl.innerText = result.title;
+      meaningContainerEl.style.display = "none";
+      errorEl.innerText = "No Definitions Found.";
       phoneticsEl.innerText = "";
       definitionsEl.innerHTML = "";
       synonymsEl.innerText = "";
       antonymsEl.innerText = "";
       audioEl.style.display = "none";
     } else {
+      errorEl.style.display = "none";
       const data = result[0];
       meaningContainerEl.style.display = "block";
       wordEl.innerText = data.word;
@@ -38,20 +40,26 @@ async function fetchAPI(word) {
       }
 
       // Definitions
-      definitionsEl.innerHTML = data.meanings[0].definitions.map(def => `<p>${def.definition}</p>`).join("");
+      definitionsEl.innerHTML = data.meanings[0].definitions
+        .map((def) => `<p>${def.definition}</p>`)
+        .join("");
 
       // Synonyms
-      synonymsEl.innerText = data.meanings[0].synonyms.length ? data.meanings[0].synonyms.join(", ") : "N/A";
+      synonymsEl.innerText = data.meanings[0].synonyms.length
+        ? data.meanings[0].synonyms.join(", ")
+        : "N/A";
 
       // Antonyms
-      antonymsEl.innerText = data.meanings[0].antonyms.length ? data.meanings[0].antonyms.join(", ") : "N/A";
+      antonymsEl.innerText = data.meanings[0].antonyms.length
+        ? data.meanings[0].antonyms.join(", ")
+        : "N/A";
 
       // Source
       sourceLinkEl.href = data.sourceUrls[0];
     }
   } catch (error) {
-    meaningContainerEl.style.display = "block";
-    wordEl.innerText = "An error occurred. Please try again.";
+    meaningContainerEl.style.display = "none";
+    errorEl.innerText = "An error occurred. Please try again.";
     console.error(error);
   }
 }
