@@ -12,5 +12,4 @@ A simple web application that generates random quotes using an API. The app disp
 
 ## Screenshots
 
-![Random Quote Generator Screenshot](screenshots/screenshot1.png)
-![Random Quote Generator Screenshot](screenshots/screenshot2.png)
+![Random Quote Generator Screenshot](screenshot1.png)
