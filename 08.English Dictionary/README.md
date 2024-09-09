@@ -13,7 +13,7 @@ A responsive and modern English dictionary web application that allows users to 
 
 ## Used API
 - **Dictionary API**: [dictionaryapi.dev](https://dictionaryapi.dev/)
-- 
+  
 ## Screenshots
 
 ![English Dictionary screenshot](screenshot1.png)
