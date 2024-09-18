@@ -1,70 +1,75 @@
-body{
+body {
     margin: 0;
-    background: linear-gradient(to left, rgb(99, 99, 90), rgb(35, 41, 1));
+    background: linear-gradient(to right, #f3f4f6, #e0e5ec);
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-.heading{
-    color: aliceblue;
+.heading {
+    color: #2c3e50;
     text-align: center;
-    padding-top: 10px;
-    font-size: 40px;
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
-.info-text{
+.info-text {
     text-align: center;
-    color: aliceblue;
-    font-size: 18px;
+    color: #34495e;
+    font-size: 1.2rem;
     font-style: italic;
+    margin-bottom: 20px;
 }
 
-.app{
+.app {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
 }
 
-.note{
-    padding: 18px;
-    border-radius: 15px;
+.note {
+    padding: 20px;
+    border-radius: 12px;
     resize: none;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    font-size: 18px;
-    height: 200px;
-    color: dimgrey;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    min-height: 150px;
+    color: #333;
     border: none;
     outline: none;
-    background: lightcyan;
+    background: #ffffff;
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.note::placeholder{
-    color: gray;
-    opacity: 30%;
+.note::placeholder {
+    color: #aaa;
 }
 
-.note:hover, .note:focus{
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-    transition: all 300ms ease;
+.note:hover,
+.note:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
 }
 
-.btn{
-    padding: 18px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    font-size: 48px;
-    height: 200px;
+.btn {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 4rem;
+    min-height: 150px;
     border: none;
-    color: #2c3e50; 
-    background: #e0f7fa;
+    color: lightslategray;
+    background: aliceblue;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.btn:hover{
-    background: #ffffff; 
-    color: #333;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+.btn:hover {
+    background: rgb(175, 207, 235);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
