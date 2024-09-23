@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+}
+
+.container {
+    background-color: #282828;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.input {
+    width: 100%;
+    font-size: 18px;
+    height: 40px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background-color: #3b3b3b;
+    color: #f5f5f5;
+}
+
+
+.payment {
+    font-weight: 700;
+    font-size: 22px;
+    color: #76c7c0;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    .input {
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .payment {
+        font-size: 20px;
+    }
+}
