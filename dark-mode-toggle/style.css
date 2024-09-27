@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-family: Arial, sans-serif;
+  }
+  
+  .input {
+    visibility: hidden;
+  }
+  
+  .label {
+    position: relative;
+    width: 90px;
+    height: 45px;
+    background-color: #ccc;
+    border-radius: 45px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease;
+  }
+  
+  .circle {
+    width: 38px;
+    height: 38px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3.5px;
+    left: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, background-color 0.4s ease;
+  }
+  
+  .input:checked + .label {
+    background-color: #4caf50;
+  }
+  
+  .input:checked + .label .circle {
+    transform: translateX(45px);
+    background-color: #fff;
+  }
+  
+  @keyframes toggleOn {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(45px);
+    }
+  }
+  
+  @keyframes toggleOff {
+    0% {
+      transform: translateX(45px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
