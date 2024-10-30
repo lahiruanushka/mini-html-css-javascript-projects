@@ -1,0 +1,94 @@
+body {
+  background: linear-gradient(135deg, #3b5998, #8b9dc3);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #f7f7f7;
+}
+
+p {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  gap: 20px;
+  font-size: 1.25rem;
+}
+
+.computer-choice {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.player-choice {
+  color: #4ecdc4;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #ffffff;
+  border: 3px solid #ddd;
+  font-size: 2.5rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #3b5998;
+}
+
+button:hover {
+  background-color: #3b5998;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+#result {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffd700;
+  margin: 15px 0;
+}
+
+#scores {
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+#player-score {
+  color: #4ecdc4;
+  font-weight: bold;
+}
+
+#computer-score {
+  color: #ff6b6b;
+  font-weight: bold;
+}
